@@ -1,0 +1,272 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d2b272ac-f882-4154-a30c-29b00a0929bf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim DO Location</ID>
+  <Name>Dim DO Location</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1237" scrolltop="-2818" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5980" y="8361" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a30000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_DOLocation" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3466" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0d0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_DOLocation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1237</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2818</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="123">
+            <Shape Id="DO Location ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="DO Location ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="DO Zone" Expanded="false">
+              <Attributes>
+                <Attribute Id="DO Zone" />
+              </Attributes>
+              <Position x="178" y="20" />
+            </Shape>
+            <Shape Id="DO Borough" Expanded="false">
+              <Attributes>
+                <Attribute Id="DO Borough" />
+              </Attributes>
+              <Position x="337" y="20" />
+            </Shape>
+            <Shape Id="DO Service Zone" Expanded="false">
+              <Attributes>
+                <Attribute Id="DO Service Zone" />
+              </Attributes>
+              <Position x="496" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ab91731f-7b9c-40a9-8c9e-e08e97f92796">
+    <DataSourceViewID>GT2020</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3129c87e-3eb4-465d-b0e5-6a28cc19bcca">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3025e30a-c52f-404e-8a96-6ede931bdf00">
+      <ID>DO Location ID</ID>
+      <Name>DO Location ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b077fa94-59bb-4f2a-acea-e1f242212b8a">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a98caac-e5e2-4a77-b1ae-28484ab7d1b8">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DOLocationID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6fa2ca35-4f9e-431d-9df2-e26231eee57a">
+          <AttributeID>DO Zone</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>DO Zone</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0aff7cdb-040c-445b-b4d2-14a0eab5acba">
+      <ID>DO Borough</ID>
+      <Name>DO Borough</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="382845c2-6f28-41c6-8fe7-b25849becdb8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ee5bb92-0186-4c12-8f5e-4323198c2c19">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_Borough</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="da8d9ede-a1fb-47c7-b372-f420375c6cc1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81a4ebe5-07c3-4d0c-a5c5-2750e2fd08fe">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bba64452-c8cf-428a-9309-933493822a5b">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b430eac-d62c-427c-8f88-15b59d26d16f">
+          <TableID>dbo_Dim_DOLocation</TableID>
+          <ColumnID>DO_Borough</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cc080518-65df-46e4-a1a2-939e5b6e453f">
+          <AttributeID>DO Service Zone</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>DO Service Zone</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c013b2c-db64-48e7-a0fd-515d5f6a79c0">
+      <ID>DO Zone</ID>
+      <Name>DO Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb2437af-cb57-46b2-a4a3-dcb7bf034f8d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec96c4c6-09c7-463c-9ddb-2f5f9a770035">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_Zone</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f4795929-5b90-40dc-9e82-5ae388335de0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6cc9f3fb-4103-4230-a3b5-66af21f551f1">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_Borough</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bb3bdff5-fa24-40ea-afd1-106cdf0c3eb2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b0f4270-44ed-471e-82b9-ddb50bc37a47">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="80df8b96-675d-438d-910b-d8e65ff8089c">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f70e046d-e9c2-439e-984a-612b4cd1d272">
+          <TableID>dbo_Dim_DOLocation</TableID>
+          <ColumnID>DO_Zone</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ec1017d2-5ba2-4562-8d87-064859c025e4">
+          <AttributeID>DO Borough</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>DO Borough</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48666440-813f-4cb2-969d-b60fa5731c29">
+      <ID>DO Service Zone</ID>
+      <Name>DO Service Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54b8c371-6375-441b-84d9-e6479e4b8734">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a98b8bf0-7454-4cf8-943c-1c009d8e1920">
+            <TableID>dbo_Dim_DOLocation</TableID>
+            <ColumnID>DO_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="077ff1c2-a76d-4e3f-aca0-586c52b11396">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="131da023-3751-4724-bfbe-e5acf26f8b37">
+          <ID>DO Service Zone</ID>
+          <Name>DO Service Zone</Name>
+          <SourceAttributeID>DO Service Zone</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c7ffeb7b-1f8c-487c-b43e-d58ff7d0e62c">
+          <ID>DO Borough</ID>
+          <Name>DO Borough</Name>
+          <SourceAttributeID>DO Borough</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fc0178d8-5236-4bd9-81c4-debdf1dc5809">
+          <ID>DO Zone</ID>
+          <Name>DO Zone</Name>
+          <SourceAttributeID>DO Zone</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c534a846-bbb3-47ca-be8b-b807c35543c3">
+          <ID>DO Location ID</ID>
+          <Name>DO Location ID</Name>
+          <SourceAttributeID>DO Location ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

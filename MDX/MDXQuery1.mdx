@@ -1,0 +1,149 @@
+﻿//Top 3 service_zone trả khách có tổng tiền tip (tip_amount) nhiều nhất trong từng năm
+// Top 3 dropoff service zones have the most sum of tip_amount in each year
+select 
+	non empty  [Measures].[Tip Amount] on 0,
+	non empty generate(
+		[Dim Dropoff Date].[Dropoff Year].children,
+		topcount(
+		{[Dim Dropoff Date].[Dropoff Year].currentmember*[Dim DO Location].[DO Service Zone].children}
+		,3,[Measures].[Tip Amount])) on 1 
+from [GT2020];
+
+//Top 3 Zone khi trả khách được tip nhiều nhất trên từng Borough
+//Top 3 dropoff Zones have the most sum of tip amount in each Borough
+select [Measures].[Tip Amount] on 0,
+non empty generate(
+[Dim DO Location].[DO Borough].children,
+topcount({[Dim DO Location].[DO Borough].currentmember*[Dim DO Location].[DO Zone].children},3,[Measures].[Tip Amount])
+) on 1
+from [GT2020];
+
+//#Đếm số lượng chuyến xe đón khách từng năm, từng tháng
+// Count pick up  taxi trip in each year, month
+
+ select non empty [Measures].[Fact GT2020 Count] on 0,non empty
+ ([Dim Pickup Date].[Pickup Month].children,[Dim Pickup Date].[Pickup Year].children) on 1
+ from [GT2020];
+
+
+
+ select non empty [Measures].[Fact GT2020 Count] on 0, non empty
+  [Dim Pickup Date].[Pickup Year].children on 1 from [GT2020];
+
+//Thống kê những service_zone đón khách được tip_amount trên  10000
+// List the pick up service_zones have tip more than 10000
+select  [Measures].[Tip Amount] on 0,{[Dim PU Location].[PU Service Zone].[PU Service Zone].members}
+having [Measures].[Tip Amount] > 10000 on 1
+from [GT2020];
+
+//3.5. Top 3 hình thức RateCode nhiều nhất theo từng năm đón khách
+// Top 3 the most choice of RateCode in each pick up years
+
+select [Measures].[Fact GT2020 Count] on 0,
+non empty generate(
+[Dim Pickup Date].[Pickup Year].children,
+topcount({[Dim Pickup Date].[Pickup Year].currentmember*[Dim Rate Code].[Ratecode ID Desc].children},3,[Measures].[Fact GT2020 Count])
+) on 1
+from [GT2020];
+
+//3.6. Thống kê tăng dần tổng tiền tài xế thu được sau khi trừ đi các phụ phí bao gồm mta_tax, fare amount, tolls amount, congestion surcharge, extra, improvement surcharge từng tháng trong năm 2020 sau khi trả khách trong khu service zone là airport là bao nhiêu?''
+//Show the total amount ascending order after subtraction of all fees including mta_tax, fare amount, tolls amount, congestion surcharge, extra, and improvement surcharge in each drop-off month in 2020 while the drop-off service zone is Airport
+with member [Measures].[Profit]
+as '([Measures].[Total Amount] - [Measures].[Extra]-[Measures].[Congestion Surcharge]-[Measures].[Fare Amount]-[Measures].[Improvement Surcharge]
+- [Measures].[Mta Tax] - [Measures].[Tolls Amount])'
+select [Measures].[Profit] on 0, order([Dim Dropoff Date].[Hierarchy].[Dropoff Month],[Measures].[Profit],asc) on 1
+From [GT2020]
+Where ([Dim DO Location].[DO Service Zone].&[Airports], [Dim Dropoff Date].[Dropoff Year].&[2020]);
+
+
+//3.7. Thống kê số lượng hành khách trung bình trong 1 chuyến đi trong từng tháng quý 4 năm 2020?
+// Show average passenger count in each month of 4th quarter year 2020
+with member [Measures].[Avg passenger count] as 
+'[Measures].[Passenger Count]/[Measures].[Fact GT2020 Count]'
+
+select 
+	[Measures].[Avg passenger count] on 1, 
+	[Dim Pickup Date].[Pickup Month].children on 0
+From [GT2020]
+where [Pickup Quarter].&[4]&[2020];
+
+
+//3.8. Quãng đường đi được theo từng zone, từng borough 
+// trip distance in each drop off zone, borough
+select non empty 
+	[Measures].[Trip Distance] on 0,
+	non empty ([Dim DO Location].[DO Borough].children,[Dim DO Location].[DO Zone].children) on 1 
+From [GT2020];
+
+select 
+	non empty [Measures].[Trip Distance] on 0,
+	non empty [Dim DO Location].[DO Borough].children on 1 
+From [GT2020];
+
+//3.9. 10 zone  cho tiền tip thấp nhất dựa vào việc đón khách 
+// the  10 pick up zones give the lowest tip amount 
+select 
+ non empty [Measures].[Tip Amount] on 0,
+ non empty 
+	bottomcount ([Dim PU Location].[Hierarchy].[PU Zone].members,10,[Measures].[Tip Amount]) on 1
+from [GT2020];
+
+//3.10. Ngoại trừ N/A thì service zone có số lượng bắt chuyến đi cao nhất 
+// Except N/A, show service zones have the most pick up
+select 
+	topcount(
+		except ([Dim PU Location].[Hierarchy].[PU Service Zone],[Dim PU Location].[Hierarchy].[PU Service Zone].&["N/A"])
+			,1,[Measures].[Fact GT2020 Count])on  1,
+	non empty [Measures].[Fact GT2020 Count] on 0
+from [GT2020];
+
+//3.11. Thống kê phần trăm tiền tip khi đón khách so với lượng tổng tiền thu được vào những tháng 1,2,5,6,7,9,10,11,12 theo từng quý trong năm 2020s
+// Show percentage of tip amount when pick up in  Jan, Ferb, May, June, July, Sep, Oct, Nov, Dec in each quarter of 2020
+with member [Measures].[PercentTip] as [Measures].[Tip Amount]/[Measures].[Total Amount] *100
+
+select non empty 
+	except(
+	 {DRILLDOWNLEVEL(
+		DRILLDOWNLEVEL(
+		[Dim Pickup Date].[Hierarchy].[Pickup Year].&[2020])
+		)
+},{[Dim Pickup Date].[Hierarchy].[Pickup Month].&[3]&[1]&[2020],
+	[Dim Pickup Date].[Hierarchy].[Pickup Month].&[4]&[2]&[2020],
+	[Dim Pickup Date].[Hierarchy].[Pickup Month].&[8]&[3]&[2020]}) ON 1,
+
+[Measures].[PercentTip] on 0
+from [GT2020];
+
+//3.12. Trung bình trong 1 cuốc xe đón khách trong năm 2020 thì một chuyến xe đi được quãng đường là bao nhiêu?
+// Avg trip distance when pick up in 2020
+with member [Measures].[AvgTrip] as [Measures].[Trip Distance]/[Measures].[Fact GT2020 Count]
+
+select 
+	non empty [Measures].[AvgTrip] on 1,
+	non empty [Dim Pickup Date].[Pickup Year].&[2020] on 0
+From [GT2020];
+
+//3.13. Khu vực Zone nào cần phải trả tổng mta_tax > 10000 trong năm 2020 trong lúc đón  khách
+// Pick up zones have to pay mtx tax more than 10000 in 2020
+select  
+	non empty [Measures].[Mta Tax] on 0,
+	non empty [Dim PU Location].[PU Zone].children having [Measures].[Mta Tax] > 10000 on 1
+from [GT2020]
+where [Dim Pickup Date].[Pickup Year].&[2020];
+
+
+//3.14. Service zone nào trong năm  2020 có số lượng  đón khách đông nhất?
+// Pick up service zone have the most passenger in 2020
+select 
+	non empty 
+	topcount([Dim PU Location].[Hierarchy].[PU Service Zone],1,[Measures].[Passenger Count]) 
+			having [Dim Pickup Date].[Pickup Year].&[2020] on 0
+from [GT2020];
+
+//3.15. Trong tháng 12 năm 2020 thì hình thức thanh toán nào được sử dụng nhiều nhất khi trả khách
+//  RateCode have the most used in 2020 when drop off
+
+select 
+	non empty [Dim Dropoff Date].[Dropoff Month].&[12]&[4]&[2020] on 1,
+	topcount([Dim Rate Code].[Ratecode ID Desc].children,1,[Measures].[Fact GT2020 Count]) on 0
+from [GT2020];

@@ -1,0 +1,111 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4ce6f117-00b1-4a43-81c9-4abf7ca6b4f8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>GT2020 1</ID>
+  <Name>GT2020_DM</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>GT2020</DataSourceID>
+  <Schema>
+    <xs:schema id="GT2020_x0020_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="GT2020_x0020_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="86ed1052-1763-4858-8dc0-5f5b2d95c48d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_GT2020_DM" msprop:design-time-name="2604dd06-c807-47c7-b155-ba0f41c29da7" msprop:FriendlyName="GT2020_DM" msprop:DbSchemaName="dbo" msprop:DbTableName="GT2020_DM" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="payment_type_desc" msprop:design-time-name="a1d4653e-6783-4408-8a6a-ebeb71754f30" msprop:DbColumnName="payment_type_desc" msprop:FriendlyName="payment_type_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RatecodeID_desc" msprop:design-time-name="f31d6d55-b26e-4480-b37b-1df05f8365a2" msprop:DbColumnName="RatecodeID_desc" msprop:FriendlyName="RatecodeID_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="trip_type" msprop:design-time-name="bcd6aab3-def0-455d-86b0-223a78712bad" msprop:DbColumnName="trip_type" msprop:FriendlyName="trip_type" type="xs:short" minOccurs="0" />
+                  <xs:element name="trip_type_desc" msprop:design-time-name="6c24ebda-016f-41e1-bef0-4221e51af6ca" msprop:DbColumnName="trip_type_desc" msprop:FriendlyName="trip_type_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RecordID" msprop:design-time-name="68d60ce5-5ed9-4c00-8c18-98d98cc14f5d" msprop:DbColumnName="RecordID" msprop:FriendlyName="RecordID" type="xs:int" />
+                  <xs:element name="VendorID" msprop:design-time-name="53671c19-45b6-4d0b-924f-7e7757c3b634" msprop:DbColumnName="VendorID" msprop:FriendlyName="VendorID" type="xs:short" minOccurs="0" />
+                  <xs:element name="lpep_pickup_datetime" msprop:design-time-name="91f30d14-5f66-4ba7-a2ba-85df430bdd04" msprop:DbColumnName="lpep_pickup_datetime" msprop:FriendlyName="lpep_pickup_datetime" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="lpep_dropoff_datetime" msprop:design-time-name="3ba0d887-08b2-4d95-a1d2-238996d6232c" msprop:DbColumnName="lpep_dropoff_datetime" msprop:FriendlyName="lpep_dropoff_datetime" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="store_and_fwd_flag" msprop:design-time-name="0d414e5d-9e8a-4e51-a80f-b62bc4df0d4c" msprop:DbColumnName="store_and_fwd_flag" msprop:FriendlyName="store_and_fwd_flag" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RatecodeID" msprop:design-time-name="b7add5d4-fbf4-4e29-939d-46e270268638" msprop:DbColumnName="RatecodeID" msprop:FriendlyName="RatecodeID" type="xs:short" minOccurs="0" />
+                  <xs:element name="PULocationID" msprop:design-time-name="dbf2e1ae-c842-4497-8db3-fe2c26f2d537" msprop:DbColumnName="PULocationID" msprop:FriendlyName="PULocationID" type="xs:short" minOccurs="0" />
+                  <xs:element name="DOLocationID" msprop:design-time-name="3aeec9f7-f1e3-4145-8acd-425a4c6455e0" msprop:DbColumnName="DOLocationID" msprop:FriendlyName="DOLocationID" type="xs:short" minOccurs="0" />
+                  <xs:element name="passenger_count" msprop:design-time-name="79292b21-60f6-4536-aca5-59e091fac064" msprop:DbColumnName="passenger_count" msprop:FriendlyName="passenger_count" type="xs:short" minOccurs="0" />
+                  <xs:element name="trip_distance" msprop:design-time-name="9f39b991-f0d8-4562-a87f-1287eb17261d" msprop:DbColumnName="trip_distance" msprop:FriendlyName="trip_distance" type="xs:float" minOccurs="0" />
+                  <xs:element name="fare_amount" msprop:design-time-name="136d8fe9-de91-4956-b3d5-58be7a6cccc2" msprop:DbColumnName="fare_amount" msprop:FriendlyName="fare_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="extra" msprop:design-time-name="ae41c978-3fc7-4848-af64-3ec92569b918" msprop:DbColumnName="extra" msprop:FriendlyName="extra" type="xs:float" minOccurs="0" />
+                  <xs:element name="mta_tax" msprop:design-time-name="b1c843ba-20c6-4f56-9d63-90fda0835aa6" msprop:DbColumnName="mta_tax" msprop:FriendlyName="mta_tax" type="xs:float" minOccurs="0" />
+                  <xs:element name="tip_amount" msprop:design-time-name="0ec693e4-980c-464e-a78a-de71cec278c6" msprop:DbColumnName="tip_amount" msprop:FriendlyName="tip_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="tolls_amount" msprop:design-time-name="077ccdf7-a1fd-4b24-a06e-0550abf8ad21" msprop:DbColumnName="tolls_amount" msprop:FriendlyName="tolls_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="improvement_surcharge" msprop:design-time-name="ddf6813e-0f00-47fa-a3b5-c5fe0b478674" msprop:DbColumnName="improvement_surcharge" msprop:FriendlyName="improvement_surcharge" type="xs:float" minOccurs="0" />
+                  <xs:element name="total_amount" msprop:design-time-name="82886333-3833-4793-978d-c588d53f261a" msprop:DbColumnName="total_amount" msprop:FriendlyName="total_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="payment_type" msprop:design-time-name="c80dc7da-b900-4d02-bb7b-b980c86a1cdb" msprop:DbColumnName="payment_type" msprop:FriendlyName="payment_type" type="xs:short" minOccurs="0" />
+                  <xs:element name="congestion_surcharge" msprop:design-time-name="7f486a1b-3b62-491e-b13f-d0258bbd981b" msprop:DbColumnName="congestion_surcharge" msprop:FriendlyName="congestion_surcharge" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_GT2020_DM" />
+          <xs:field xpath="RecordID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <GT2020_x0020_1 xmlns="" />
+  </Schema>
+</DataSourceView>

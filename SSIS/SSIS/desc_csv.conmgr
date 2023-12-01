@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="desc_csv"
+  DTS:DTSID="{BB78765B-FEB3-4317-871B-529634B96DA3}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="F:\Nam 3\hoc_ky_6\OLAP\Do_an\desc.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="16"
+          DTS:TextQualified="True"
+          DTS:ObjectName="VendorID"
+          DTS:DTSID="{668AE916-F030-4104-86FC-D620F2A8CD70}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="33"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="VendorID_desc"
+          DTS:DTSID="{04536BCB-390F-43F0-8C28-4C7CA5B7629C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="store_and_fwd_flag"
+          DTS:DTSID="{44BBE757-D38A-44B8-82D7-DF222BDEA887}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="28"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="store_and_fwd_flag_desc"
+          DTS:DTSID="{0914B193-EA5B-410B-A12A-89BA0671BA3C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="16"
+          DTS:TextQualified="True"
+          DTS:ObjectName="payment_type"
+          DTS:DTSID="{042B6576-2B6C-4E7C-B7C2-B76B97F89E35}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="11"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="payment_type_desc"
+          DTS:DTSID="{944A6ECE-740F-4FD2-8CD8-3133B657595E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="16"
+          DTS:TextQualified="True"
+          DTS:ObjectName="RatecodeID"
+          DTS:DTSID="{358DDF2A-735E-420D-A8C3-2B1B7922D233}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="21"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="RatecodeID_desc"
+          DTS:DTSID="{1D1A1E25-640B-435D-B4CD-A233CF15EB08}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="16"
+          DTS:TextQualified="True"
+          DTS:ObjectName="trip_type"
+          DTS:DTSID="{1C1566DA-746E-45CF-9FDE-210800DCFC3E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="11"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="trip_type_desc"
+          DTS:DTSID="{69369659-840E-4459-BF75-899B9279C402}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

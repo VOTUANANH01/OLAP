@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="GT2020_DW"
+  DTS:DTSID="{D5658347-D78D-4FA5-806C-436E220839F4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ANH;User ID=sa;Initial Catalog=GT2020;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-SSIS-{D5658347-D78D-4FA5-806C-436E220839F4}ANH.GT2020.sa;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+3UGmhhEC02PH2NPoityvgAAAAACAAAAAAAQZgAAAAEAACAAAAAaI28i7uoEnRb+oRCtai6paPPpzZ31PTQG7YzLlkIdIgAAAAAOgAAAAAIAACAAAAAFg9VIMSZ5KVb2K8YoPpnCAeDNBEvvYCYQkyX6eWjeS4AAAAC9K5tXtIdq558C3hJW6SEfroE/QRH0hRm1S4VYS4UmaiU5t6Idusf+Nj14HJ7fDQk2Vp/dZYkDIPqYboWsHkW5kVDRWPxwjdjs5rpevld76UFsr73TMPPEQlMCqFYmimzM2JgSBXaKSLo6fB9ICT6Xcs3q5aihcSmZA6z9WgyEWUAAAACcFtpI+zOKWuCXsoxwuivv1V8mLP9bBhX8LlSFqQ8BDa0GDdm0FGcST4z0Uuo+PpqDpwludm8B/786rRb+bxuj</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

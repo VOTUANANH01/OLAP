@@ -1,0 +1,314 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bb604915-a832-412d-9004-f12a4c1302b1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>GT2020</ID>
+  <Name>GT2020</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>GT2020</DataSourceID>
+  <Schema>
+    <xs:schema id="GT2020" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="GT2020" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0810d8dd-e13c-446c-bcae-637c3ed03ef5">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_GT2020" msprop:design-time-name="3a56d8d6-1562-474a-8d49-0f4381b95d32" msprop:DbTableName="Fact_GT2020" msprop:FriendlyName="Fact_GT2020" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RecordID" msprop:design-time-name="79744861-f876-4436-acb3-855555c5da8e" msprop:DbColumnName="RecordID" msprop:FriendlyName="RecordID" type="xs:int" />
+                  <xs:element name="VendorID" msprop:design-time-name="00be24bf-9d9b-49c5-95e8-a0e0357305d0" msprop:DbColumnName="VendorID" msprop:FriendlyName="VendorID" type="xs:short" minOccurs="0" />
+                  <xs:element name="lpep_pickup_datetime" msprop:design-time-name="8ca38e7a-76b4-4bd1-a8a8-7b610b8196ed" msprop:DbColumnName="lpep_pickup_datetime" msprop:FriendlyName="lpep_pickup_datetime" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="lpep_dropoff_datetime" msprop:design-time-name="ef3478c9-f2d0-4d06-8482-3d673e312a0f" msprop:DbColumnName="lpep_dropoff_datetime" msprop:FriendlyName="lpep_dropoff_datetime" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="store_and_fwd_flag" msprop:design-time-name="a66ee9e9-7919-4d91-b442-42402be714d9" msprop:DbColumnName="store_and_fwd_flag" msprop:FriendlyName="store_and_fwd_flag" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RatecodeID" msprop:design-time-name="4b797079-d998-48b6-b51f-e7bc78331d9e" msprop:DbColumnName="RatecodeID" msprop:FriendlyName="RatecodeID" type="xs:short" minOccurs="0" />
+                  <xs:element name="PULocationID" msprop:design-time-name="90ed1c0c-16f1-4010-8f54-f6c7a036dc2a" msprop:DbColumnName="PULocationID" msprop:FriendlyName="PULocationID" type="xs:short" minOccurs="0" />
+                  <xs:element name="DOLocationID" msprop:design-time-name="0427212b-27fb-42a5-9d53-81b013814cad" msprop:DbColumnName="DOLocationID" msprop:FriendlyName="DOLocationID" type="xs:short" minOccurs="0" />
+                  <xs:element name="passenger_count" msprop:design-time-name="e5a72caf-1023-48ac-87b7-f0cb4545eb92" msprop:DbColumnName="passenger_count" msprop:FriendlyName="passenger_count" type="xs:short" minOccurs="0" />
+                  <xs:element name="trip_distance" msprop:design-time-name="5c856f0b-306a-48c1-930d-bdbcb3e284e9" msprop:DbColumnName="trip_distance" msprop:FriendlyName="trip_distance" type="xs:float" minOccurs="0" />
+                  <xs:element name="fare_amount" msprop:design-time-name="d574cad6-93f6-4df5-a211-9b8d3d7da199" msprop:DbColumnName="fare_amount" msprop:FriendlyName="fare_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="extra" msprop:design-time-name="b19748e6-3956-461a-a5d0-85c9d1135c6e" msprop:DbColumnName="extra" msprop:FriendlyName="extra" type="xs:float" minOccurs="0" />
+                  <xs:element name="mta_tax" msprop:design-time-name="c19cefc2-a836-4e90-acdd-6fb6cc29aae2" msprop:DbColumnName="mta_tax" msprop:FriendlyName="mta_tax" type="xs:float" minOccurs="0" />
+                  <xs:element name="tip_amount" msprop:design-time-name="37862e7a-7e59-4249-9053-031566f650c1" msprop:DbColumnName="tip_amount" msprop:FriendlyName="tip_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="tolls_amount" msprop:design-time-name="85fbee06-b05d-41c2-b889-12f5fd9e1548" msprop:DbColumnName="tolls_amount" msprop:FriendlyName="tolls_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="improvement_surcharge" msprop:design-time-name="d40b2f53-ac59-4401-b48b-07a3f2874253" msprop:DbColumnName="improvement_surcharge" msprop:FriendlyName="improvement_surcharge" type="xs:float" minOccurs="0" />
+                  <xs:element name="total_amount" msprop:design-time-name="ba7ce350-0271-471d-82f5-0edd84236bf1" msprop:DbColumnName="total_amount" msprop:FriendlyName="total_amount" type="xs:float" minOccurs="0" />
+                  <xs:element name="payment_type" msprop:design-time-name="fb9b81b8-ce51-4dbf-95eb-d01ce914d686" msprop:DbColumnName="payment_type" msprop:FriendlyName="payment_type" type="xs:short" minOccurs="0" />
+                  <xs:element name="trip_type" msprop:design-time-name="6555f7ef-a60e-49b7-8956-2c939738182e" msprop:DbColumnName="trip_type" msprop:FriendlyName="trip_type" type="xs:short" minOccurs="0" />
+                  <xs:element name="congestion_surcharge" msprop:design-time-name="5b6d098f-bb72-49a5-be25-ed7e6d1fce57" msprop:DbColumnName="congestion_surcharge" msprop:FriendlyName="congestion_surcharge" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Vendor" msprop:design-time-name="bf0dec53-ef71-416a-9453-a1ab14066ac1" msprop:DbTableName="Dim_Vendor" msprop:FriendlyName="Dim_Vendor" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VendorID" msprop:design-time-name="689e70b0-d223-4d19-9a2b-f7128486813d" msprop:DbColumnName="VendorID" msprop:FriendlyName="VendorID" type="xs:short" />
+                  <xs:element name="VendorID_desc" msprop:design-time-name="365889d5-df48-40cf-8810-2f75317699ff" msprop:DbColumnName="VendorID_desc" msprop:FriendlyName="VendorID_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="33" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Pickup_Date" msprop:design-time-name="bd17f58c-7fe4-4b5e-9749-784bcdb8ce1c" msprop:DbTableName="Dim_Pickup_Date" msprop:FriendlyName="Dim_Pickup_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lpep_pickup_datetime" msprop:design-time-name="0e70a169-2b83-4d3e-a464-79fc25212607" msprop:DbColumnName="lpep_pickup_datetime" msprop:FriendlyName="lpep_pickup_datetime" type="xs:dateTime" />
+                  <xs:element name="pickup_month" msprop:design-time-name="f14d128c-11b2-4d25-b521-68e239e19fa2" msprop:DbColumnName="pickup_month" msprop:FriendlyName="pickup_month" type="xs:int" minOccurs="0" />
+                  <xs:element name="pickup_quarter" msprop:design-time-name="38b6a8d5-dbb1-4356-882c-4060b84e137e" msprop:DbColumnName="pickup_quarter" msprop:FriendlyName="pickup_quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="pickup_year" msprop:design-time-name="31069cb6-7815-4c6d-8338-ae317cec8aaf" msprop:DbColumnName="pickup_year" msprop:FriendlyName="pickup_year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_PULocation" msprop:design-time-name="7a0877de-1f45-4788-b943-251fe7d305fa" msprop:DbTableName="Dim_PULocation" msprop:FriendlyName="Dim_PULocation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PULocationID" msprop:design-time-name="957077a7-12bd-45c7-881b-c8439094f8c6" msprop:DbColumnName="PULocationID" msprop:FriendlyName="PULocationID" type="xs:short" />
+                  <xs:element name="PU_Borough" msprop:design-time-name="990bc2ae-4db4-4b5a-aa2a-26cb8971af7f" msprop:DbColumnName="PU_Borough" msprop:FriendlyName="PU_Borough" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PU_Zone" msprop:design-time-name="829bc5d1-45e2-4e92-b766-a172cb069bbd" msprop:DbColumnName="PU_Zone" msprop:FriendlyName="PU_Zone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PU_service_zone" msprop:design-time-name="19d2092b-c24b-40d4-bfd2-b2b1078e0230" msprop:DbColumnName="PU_service_zone" msprop:FriendlyName="PU_service_zone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_flag" msprop:design-time-name="790fbe18-e67e-48de-8922-122eb69bd1ef" msprop:DbTableName="Dim_flag" msprop:FriendlyName="Dim_flag" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="store_and_fwd_flag" msprop:design-time-name="93cd56f8-3a4a-4841-8bca-6c205522cfae" msprop:DbColumnName="store_and_fwd_flag" msprop:FriendlyName="store_and_fwd_flag">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="store_and_fwd_flag_desc" msprop:design-time-name="172eb968-7b9e-474d-9e0a-e1444a23f747" msprop:DbColumnName="store_and_fwd_flag_desc" msprop:FriendlyName="store_and_fwd_flag_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="28" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Payment" msprop:design-time-name="76e02f38-f24e-4fc1-a34f-4b33bb2fd6b9" msprop:DbTableName="Dim_Payment" msprop:FriendlyName="Dim_Payment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="payment_type" msprop:design-time-name="640ab6e1-8fcf-4548-a845-df4aa3a327a1" msprop:DbColumnName="payment_type" msprop:FriendlyName="payment_type" type="xs:short" />
+                  <xs:element name="payment_type_desc" msprop:design-time-name="97cec29c-ce50-4e0d-8254-cdb6bf8cb6da" msprop:DbColumnName="payment_type_desc" msprop:FriendlyName="payment_type_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Dropoff_Date" msprop:design-time-name="9f033c37-0550-44b4-8a15-ea9e54181c0e" msprop:DbTableName="Dim_Dropoff_Date" msprop:FriendlyName="Dim_Dropoff_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lpep_dropoff_datetime" msprop:design-time-name="0e9ee202-34f3-4aa8-955d-150518777b4b" msprop:DbColumnName="lpep_dropoff_datetime" msprop:FriendlyName="lpep_dropoff_datetime" type="xs:dateTime" />
+                  <xs:element name="dropoff_month" msprop:design-time-name="3b25c280-c536-428d-a37c-4f36043f479f" msprop:DbColumnName="dropoff_month" msprop:FriendlyName="dropoff_month" type="xs:int" minOccurs="0" />
+                  <xs:element name="dropoff_quarter" msprop:design-time-name="195ccc93-d356-4661-8ed0-f1f53b14c41c" msprop:DbColumnName="dropoff_quarter" msprop:FriendlyName="dropoff_quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="dropoff_year" msprop:design-time-name="c1e0e9d4-a316-42b6-b927-bc2c2840e1ae" msprop:DbColumnName="dropoff_year" msprop:FriendlyName="dropoff_year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_DOLocation" msprop:design-time-name="2c14b838-9749-4bd8-9ca0-81258062c53d" msprop:DbTableName="Dim_DOLocation" msprop:FriendlyName="Dim_DOLocation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DOLocationID" msprop:design-time-name="1be162fa-084f-4377-aaf3-b582fab74dba" msprop:DbColumnName="DOLocationID" msprop:FriendlyName="DOLocationID" type="xs:short" />
+                  <xs:element name="DO_Borough" msprop:design-time-name="e4f35d77-79e1-48be-8398-4d08d64688c8" msprop:DbColumnName="DO_Borough" msprop:FriendlyName="DO_Borough" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DO_Zone" msprop:design-time-name="6e171aec-336e-4bd6-8d4a-037f65d51b95" msprop:DbColumnName="DO_Zone" msprop:FriendlyName="DO_Zone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DO_service_zone" msprop:design-time-name="e9fc480d-5a5c-40b0-b38a-c9f7c8458a4f" msprop:DbColumnName="DO_service_zone" msprop:FriendlyName="DO_service_zone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_RateCode" msprop:design-time-name="c997229a-549d-46d2-8d0a-ef550f0b5a9c" msprop:DbTableName="Dim_RateCode" msprop:FriendlyName="Dim_RateCode" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RatecodeID" msprop:design-time-name="ba9b2c17-171d-4642-8e3d-aa33b7ad3211" msprop:DbColumnName="RatecodeID" msprop:FriendlyName="RatecodeID" type="xs:short" />
+                  <xs:element name="RatecodeID_desc" msprop:design-time-name="c552a86f-7099-48a3-9e60-d03af0b8246e" msprop:DbColumnName="RatecodeID_desc" msprop:FriendlyName="RatecodeID_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Triptype" msprop:design-time-name="4305ce92-bfbc-4f02-8153-491377c0aff4" msprop:DbTableName="Dim_Triptype" msprop:FriendlyName="Dim_Triptype" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="trip_type" msprop:design-time-name="ddb2befb-7a77-4d84-a161-97beb3e3c5ef" msprop:DbColumnName="trip_type" msprop:FriendlyName="trip_type" type="xs:short" />
+                  <xs:element name="trip_type_desc" msprop:design-time-name="8c58d112-d891-4b5a-85e2-9c942393f7bf" msprop:DbColumnName="trip_type_desc" msprop:FriendlyName="trip_type_desc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="RecordID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Vendor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Vendor" />
+          <xs:field xpath="VendorID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Pickup_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Pickup_Date" />
+          <xs:field xpath="lpep_pickup_datetime" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_PULocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_PULocation" />
+          <xs:field xpath="PULocationID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_flag_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_flag" />
+          <xs:field xpath="store_and_fwd_flag" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Payment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Payment" />
+          <xs:field xpath="payment_type" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Dropoff_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Dropoff_Date" />
+          <xs:field xpath="lpep_dropoff_datetime" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_DOLocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_DOLocation" />
+          <xs:field xpath="DOLocationID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_RateCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_RateCode" />
+          <xs:field xpath="RatecodeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Triptype_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Triptype" />
+          <xs:field xpath="trip_type" />
+        </xs:unique>
+        <xs:keyref name="FK_fact_triptype" refer="dbo_Dim_Triptype_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="trip_type" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_payment" refer="dbo_Dim_Payment_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="payment_type" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_flag" refer="dbo_Dim_flag_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="store_and_fwd_flag" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_DOlocation" refer="dbo_Dim_DOLocation_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="DOLocationID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_pickupdate" refer="dbo_Dim_Pickup_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="lpep_pickup_datetime" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_ratecode" refer="dbo_Dim_RateCode_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="RatecodeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_vendor" refer="dbo_Dim_Vendor_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="VendorID" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_dropoffdate" refer="dbo_Dim_Dropoff_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="lpep_dropoff_datetime" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_PUlocation" refer="dbo_Dim_PULocation_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_GT2020" />
+          <xs:field xpath="PULocationID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <GT2020 xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,265 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8d6a5c47-d59e-4d35-8fb2-d7efd033d805" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Pickup Date</ID>
+  <Name>Dim Pickup Date</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-986" scrolltop="-2818" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5980" y="8361" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a30000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Pickup_Date" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3969" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000810f0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Pickup_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-986</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2818</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="154">
+            <Shape Id="Lpep Pickup Datetime" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lpep Pickup Datetime" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Pickup Month" Expanded="false">
+              <Attributes>
+                <Attribute Id="Pickup Month" />
+              </Attributes>
+              <Position x="217" y="20" />
+            </Shape>
+            <Shape Id="Pickup Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Pickup Quarter" />
+              </Attributes>
+              <Position x="415" y="20" />
+            </Shape>
+            <Shape Id="Pickup Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Pickup Year" />
+              </Attributes>
+              <Position x="612" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="32a2168b-60f1-46c1-ac12-caa17db43cc6">
+    <DataSourceViewID>GT2020</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="686e5a4e-1a7a-408d-b60c-82f649424417">
+      <ID>Lpep Pickup Datetime</ID>
+      <Name>Lpep Pickup Datetime</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="890d8152-eb86-468b-aa2a-b47473d03919">
+          <DataType>Date</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c1d3929-aa67-4d30-a000-226af304859b">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>lpep_pickup_datetime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d9408c64-e431-4c2e-98ec-8ee1bc741baf">
+          <AttributeID>Pickup Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Pickup Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e7545ac0-b122-41aa-9dbe-a927536edff6">
+      <ID>Pickup Month</ID>
+      <Name>Pickup Month</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbdfff10-ab7a-4dc5-b603-6f96fdc88e67">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7123f299-62bc-4835-9de4-9a54ad582bf7">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e56acbf3-9938-4f10-936a-77bf78bc0fe7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7eef0d7-14f2-4925-91ad-ed38b916b792">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fd035fbd-49b9-47e3-9c5d-89dc8cb346f3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8aa1bf3-0fe5-4cdb-9ee8-ed8535c4d8db">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0b3f863b-4712-49e6-a8a8-5a5d90f5ced7">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f38d8c35-2bd7-45b9-80f6-336440ad371f">
+          <TableID>dbo_Dim_Pickup_Date</TableID>
+          <ColumnID>pickup_month</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="205fa2bc-8751-402a-8619-2f2b09c350ef">
+          <AttributeID>Pickup Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Pickup Quarter</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1895f46d-3668-46e3-b61b-f56abdc550d5">
+      <ID>Pickup Quarter</ID>
+      <Name>Pickup Quarter</Name>
+      <Type>Quarters</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2fcf4916-110b-4f1e-97a7-871e078a1bec">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ddf16ae-1fb5-4b6c-adb4-dcfbffbdd961">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6d8e184e-05c1-481d-b718-530b7c373af5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6bd7b1bf-bb51-4f3c-a379-a137e4e9935a">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1f854ea1-97f3-4ef0-be51-02b0969235a9">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0c2f0257-c5dd-4571-8005-bdbbecb431bd">
+          <TableID>dbo_Dim_Pickup_Date</TableID>
+          <ColumnID>pickup_quarter</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e29a9e56-4345-4f89-af34-6e51292d06e4">
+          <AttributeID>Pickup Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Pickup Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="08015b39-96f6-4238-a203-aab60a292169">
+      <ID>Pickup Year</ID>
+      <Name>Pickup Year</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1f5cbd3-c0be-4a8e-81fc-168acbbf0a49">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f19eca8-b08c-463e-ac3f-a67c99506770">
+            <TableID>dbo_Dim_Pickup_Date</TableID>
+            <ColumnID>pickup_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4fd3fb8c-0ecf-4908-ac5b-0dd3286100fb">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="7ad41f1e-a414-4326-b9b1-eaba09e9d4f4">
+          <ID>Pickup Year</ID>
+          <Name>Pickup Year</Name>
+          <SourceAttributeID>Pickup Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="88602bc3-7fef-455e-9f3f-7457039c81ee">
+          <ID>Pickup Month</ID>
+          <Name>Pickup Month</Name>
+          <SourceAttributeID>Pickup Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ce47085b-839e-42a4-8521-89ffc03e01bf">
+          <ID>Pickup Quarter</ID>
+          <Name>Pickup Quarter</Name>
+          <SourceAttributeID>Pickup Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0747753e-7989-437a-a8d0-160d9d24be6f">
+          <ID>Lpep Pickup Datetime</ID>
+          <Name>Lpep Pickup Datetime</Name>
+          <SourceAttributeID>Lpep Pickup Datetime</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

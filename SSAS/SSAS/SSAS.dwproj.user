@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>GT2020</Id>
+            <Name>GT2020</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+3UGmhhEC02PH2NPoityvgAAAAAOAAAARwBUADIAMAAyADAAAAAQZgAAAAEAACAAAADTXcseWtxlu2wd0VhicM86zotCHwAW0Rgng0nOxgeHXAAAAAAOgAAAAAIAACAAAABWvewI6qKo5Z6H7+1gprX4h9GjxMHyogT1JnFLwEL1cRAAAACnGHBrbteluzAY4pDZtOz+QAAAAJ0BPEscfS3iTlOreyO9xbkXICvYKdt3IqsY9oFK3+iMfflY7fm3uaqzGQdFberw9empUAdqw5CCHJblQ08IYyk=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>GT2020</Id>
+            <Name>GT2020</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+3UGmhhEC02PH2NPoityvgAAAAAOAAAARwBUADIAMAAyADAAAAAQZgAAAAEAACAAAADkP1MvOLecHNq7VaREzuFccro+HtJOxXcHic9ix33yOQAAAAAOgAAAAAIAACAAAAAnY6B6f8TZRcWr4FYMDxnwCAR+GRvwtnQm/eoLqCRXmBAAAACVQX0CF/AZgpUWvliYTZOTQAAAAGdG+LKox0fxMjoAct52CLUQtiyItftCXnQLSEyJZ9QvKpu2sTiBGtFQAdleW8/fMkrL6aKeYQA821SC1dpIBus=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>ANH</TargetServer>
+        <TargetDatabase>SSAS</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

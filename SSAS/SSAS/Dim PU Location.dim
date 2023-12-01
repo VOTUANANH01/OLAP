@@ -1,0 +1,280 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3af93ad6-77a7-4f78-942f-5afb0e7fc12c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim PU Location</ID>
+  <Name>Dim PU Location</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1250" scrolltop="-2818" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5980" y="8361" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a30000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_PULocation" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000700d0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_PULocation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1250</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2818</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="137">
+            <Shape Id="PU Location ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="PU Location ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="PU Zone" Expanded="false">
+              <Attributes>
+                <Attribute Id="PU Zone" />
+              </Attributes>
+              <Position x="196" y="20" />
+            </Shape>
+            <Shape Id="PU Borough" Expanded="false">
+              <Attributes>
+                <Attribute Id="PU Borough" />
+              </Attributes>
+              <Position x="372" y="20" />
+            </Shape>
+            <Shape Id="PU Service Zone" Expanded="false">
+              <Attributes>
+                <Attribute Id="PU Service Zone" />
+              </Attributes>
+              <Position x="548" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="acdb2cc8-5db3-49af-99ac-d757b94a4bf9">
+    <DataSourceViewID>GT2020</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="8959bf22-51b2-495a-bfa2-33034e591f70">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0e53eb71-7354-4410-9ac8-93e1a2b0ad00">
+      <ID>PU Location ID</ID>
+      <Name>PU Location ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="47b8f052-549d-43fd-a3d7-01ca164279ea">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d11d6bb8-8fd1-44cd-a63d-739548352e7a">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PULocationID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0f2116e8-d2e3-490f-aed3-3721ac81311c">
+          <AttributeID>PU Zone</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>PU Zone</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16394705-6c4e-4ef3-8d39-9f2932bb7620">
+      <ID>PU Borough</ID>
+      <Name>PU Borough</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c4dd261-c175-4a06-8763-6e597fb9c776">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="668b5537-0b2e-450f-b53f-20ae0e75d12b">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_Borough</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a58a5f3b-9154-4055-8d46-bfba28d6f7f4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf597c89-c1a7-4b8d-bba8-393d430a0542">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="23839b51-a08b-4d8c-b0a9-f36d7604e7e3">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="baa98580-5158-4739-af1f-7a7fa1d76eb2">
+          <TableID>dbo_Dim_PULocation</TableID>
+          <ColumnID>PU_Borough</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f6afb6fd-0a16-4b6b-92af-f5c18206f074">
+          <AttributeID>PU Service Zone</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>PU Service Zone</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf8aac00-7feb-4f55-95b5-1b7d812e52f8">
+      <ID>PU Zone</ID>
+      <Name>PU Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2de866be-4787-49b2-8884-a650e07202a9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa90221a-c116-4310-9a4d-4315aeb86b57">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_Zone</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="500e4dc1-589c-4931-a5ba-de65ddd3fb7f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9da6935f-df8a-49de-ae83-0fd7c4667305">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_Borough</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7336fba3-edbf-48a1-ab93-6afc513e0ed7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bfed068-970b-4923-bda9-9317f8d4ea6d">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8545ce54-3ece-4f3b-9484-86f72edcbcf8">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f62e5c27-2841-47c8-9b6d-1b955b0fd5c1">
+          <TableID>dbo_Dim_PULocation</TableID>
+          <ColumnID>PU_Zone</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="91d576fe-3899-44a4-907d-69abd4ad4058">
+          <AttributeID>PU Borough</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>PU Borough</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="bd3e560d-821c-422c-9ac2-474c1c8491bd">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0498fa8d-38ca-4ba4-88f2-5fa5ab352a44">
+          <TableID>dbo_Dim_PULocation</TableID>
+          <ColumnID>PU_Zone</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28091b04-9ad0-458f-ac96-36b9f4784dfc">
+      <ID>PU Service Zone</ID>
+      <Name>PU Service Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="139045f4-2a80-44ee-8c5d-4ff9b2e3017d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="87f6d3e9-2035-49d8-aadf-712371b88100">
+            <TableID>dbo_Dim_PULocation</TableID>
+            <ColumnID>PU_service_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ab4089d3-dd34-4344-b88f-588dfa3d6b21">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="0681eaa0-e971-4d0f-a3fb-99c9486b3645">
+          <ID>PU Service Zone</ID>
+          <Name>PU Service Zone</Name>
+          <SourceAttributeID>PU Service Zone</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="793df108-773b-44ff-bbb7-e8629efdf4e9">
+          <ID>PU Borough</ID>
+          <Name>PU Borough</Name>
+          <SourceAttributeID>PU Borough</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7a715b4e-fa62-4be3-a39e-4e3548276e49">
+          <ID>PU Zone</ID>
+          <Name>PU Zone</Name>
+          <SourceAttributeID>PU Zone</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="91a1fe00-b702-4f7b-9cb4-b3056171fd08">
+          <ID>PU Location ID</ID>
+          <Name>PU Location ID</Name>
+          <SourceAttributeID>PU Location ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
